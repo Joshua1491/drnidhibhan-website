@@ -6,7 +6,7 @@ export default function HomePage() {
   useEffect(() => {
     // ======== PARTICLE CANVAS ========
     const canvas = document.getElementById("heroCanvas") as HTMLCanvasElement;
-    if (!canvas) return;
+    if (!canvas) return
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
@@ -582,12 +582,12 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
           <span className="nav-brand-sub">Subconscious Mind Transformation</span>
         </a>
         <ul className="nav-links" id="navLinks">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#coaching">Coaching</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/services/life-coaching">Coaching</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#book" className="nav-cta">Begin Your Shift</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/booking" className="nav-cta">Begin Your Shift</a></li>
         </ul>
         <button className="hamburger" onClick={toggleMenu} aria-label="Menu">
           <span></span>
@@ -757,10 +757,10 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
             reconditioning. Three decades. Thousands transformed.
           </p>
           <div className="hero-buttons">
-            <a href="#book" className="btn-primary">
+            <a href="/booking" className="btn-primary">
               Start Your Transformation <span>{"\u2192"}</span>
             </a>
-            <a href="#about" className="btn-secondary">
+            <a href="/about" className="btn-secondary">
               How It Works
             </a>
           </div>
@@ -1125,7 +1125,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 reads your planetary positions to identify the subconscious patterns, inherited fears,
                 and karmic imprints that shape your decisions, relationships, and self-sabotage cycles.
               </p>
-              <a href="#book" className="learn-more">
+              <a href="/services/vedic-astrology" className="learn-more">
                 Explore {"\u2192"}
               </a>
             </div>
@@ -1144,7 +1144,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 doubt, the old stories. Clinical hypnotherapy allows Dr. Bhan to reprogram deep-seated
                 beliefs at the root — where talk therapy often can&apos;t reach.
               </p>
-              <a href="#book" className="learn-more">
+              <a href="/services/hypnotherapy" className="learn-more">
                 Explore {"\u2192"}
               </a>
             </div>
@@ -1163,7 +1163,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 helps you travel to the origin point of recurring fears, unexplained phobias, and karmic
                 entanglements — and release them with white light healing.
               </p>
-              <a href="#book" className="learn-more">
+              <a href="/services/past-life-regression" className="learn-more">
                 Explore {"\u2192"}
               </a>
             </div>
@@ -1183,7 +1183,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 techniques to overwrite limiting thought patterns with empowering new beliefs — working
                 beneath awareness, where lasting change actually happens.
               </p>
-              <a href="#book" className="learn-more">
+              <a href="/services" className="learn-more">
                 Explore {"\u2192"}
               </a>
             </div>
@@ -1202,7 +1202,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 Bhan recalibrates the energy of your home or workspace — removing blockages in the
                 physical space that mirror blockages in your mind.
               </p>
-              <a href="#book" className="learn-more">
+              <a href="/services" className="learn-more">
                 Explore {"\u2192"}
               </a>
             </div>
@@ -1223,7 +1223,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 creates a complete picture of where you&apos;ve been, where you are, and where
                 you&apos;re headed.
               </p>
-              <a href="#book" className="learn-more">
+              <a href="/services" className="learn-more">
                 Explore {"\u2192"}
               </a>
             </div>
@@ -1370,7 +1370,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 <div className="check">{"\u2713"}</div> In-Person (GTA) or Virtual Worldwide
               </div>
             </div>
-            <a href="#book" className="btn-primary">
+            <a href="/services/life-coaching" className="btn-primary">
               Explore Coaching Packages <span>{"\u2192"}</span>
             </a>
           </div>
@@ -1548,14 +1548,14 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
           </p>
           <div className="hero-buttons reveal reveal-delay-3">
             <a
-              href="https://www.drnidhibhan.com/book-online"
+              href="/booking"
               className="btn-primary"
               target="_blank"
               rel="noopener noreferrer"
             >
               Book Your Session <span>{"\u2192"}</span>
             </a>
-            <a href="#contact" className="btn-secondary">
+            <a href="/contact" className="btn-secondary">
               Get in Touch
             </a>
           </div>
@@ -1630,7 +1630,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
               </a>
             </li>
             <li>
-              <a href="https://www.drnidhibhan.com/book-online" target="_blank" rel="noopener noreferrer">
+              <a href="/booking" target="_blank" rel="noopener noreferrer">
                 Book a Session
               </a>
             </li>
