@@ -24,6 +24,7 @@ const posts = [
     date: "April 10, 2026",
     category: "Vedic Astrology",
     bg: "bg-lavender-light",
+    link: "/services/vedic-astrology",
   },
   {
     title: "5 Signs Your Subconscious Mind Is Running the Show",
@@ -32,6 +33,7 @@ const posts = [
     date: "March 28, 2026",
     category: "Subconscious Mind",
     bg: "bg-peach-light",
+    link: "/services/hypnotherapy",
   },
   {
     title: "What Actually Happens During a Hypnotherapy Session",
@@ -40,6 +42,7 @@ const posts = [
     date: "March 15, 2026",
     category: "Hypnotherapy",
     bg: "bg-sage-light",
+    link: "/services/hypnotherapy",
   },
   {
     title: "Past Lives and Present Patterns: How Karmic Imprints Affect You Today",
@@ -48,6 +51,7 @@ const posts = [
     date: "February 27, 2026",
     category: "Past Life Regression",
     bg: "bg-blush-light",
+    link: "/services/past-life-regression",
   },
   {
     title: "The Difference Between Coaching and Transformation",
@@ -56,6 +60,7 @@ const posts = [
     date: "February 12, 2026",
     category: "Life Coaching",
     bg: "bg-lavender-light",
+    link: "/services/life-coaching",
   },
   {
     title: "How to Prepare for Your First Consultation with Dr. Nidhi",
@@ -64,6 +69,7 @@ const posts = [
     date: "January 30, 2026",
     category: "Getting Started",
     bg: "bg-peach-light",
+    link: "/booking",
   },
 ];
 
@@ -100,7 +106,7 @@ export default function BlogPage() {
             {posts.map((post, i) => (
               <a
                 key={post.title}
-                href="#"
+                href={post.link}
                 className={`card ${post.bg} flex flex-col group animate-fade-up`}
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
@@ -154,13 +160,20 @@ export default function BlogPage() {
             guidance for personal growth delivered directly to your inbox.
           </p>
 
-          <form className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+          <form
+            action="https://formspree.io/f/xpwdkqyj"
+            method="POST"
+            className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto"
+          >
             <input
               type="email"
+              name="email"
+              required
               placeholder="Enter your email address"
               className="flex-1 px-5 py-3.5 rounded-full bg-white/80 border border-transparent font-body text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-soft-gold/40 transition-colors"
               style={{ border: "1px solid rgba(197,166,107,0.12)" }}
             />
+            <input type="hidden" name="_subject" value="New newsletter subscriber" />
             <button type="submit" className="btn-primary whitespace-nowrap">
               Subscribe
             </button>
