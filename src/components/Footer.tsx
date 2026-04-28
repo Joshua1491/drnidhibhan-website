@@ -10,7 +10,7 @@ export default function Footer() {
     >
       {/* Zodiac strip */}
       <div
-        className="flex justify-center gap-6 py-4 text-[0.9rem] opacity-20"
+        className="flex justify-center gap-6 py-4 text-[0.9rem] opacity-20 flex-wrap overflow-hidden"
         style={{ borderBottom: "1px solid rgba(197,166,107,0.15)" }}
       >
         {zodiacSymbols.map((s, i) => (
@@ -18,7 +18,7 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className="max-w-6xl mx-auto px-8 py-16">
+      <div className="max-w-6xl mx-auto px-5 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">

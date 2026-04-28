@@ -104,14 +104,14 @@ export default function Navigation() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div
-          className="fixed inset-0 top-0 bg-[var(--cream)] z-[99] flex flex-col items-center justify-center gap-8 animate-fade-in"
-          style={{ paddingTop: "5rem" }}
+          className="fixed inset-0 top-0 bg-[var(--cream)] z-[99] flex flex-col items-center justify-center gap-6 animate-fade-in overflow-y-auto"
+          style={{ paddingTop: "5rem", paddingBottom: "2rem" }}
         >
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-[1.2rem] tracking-[0.2em] uppercase no-underline text-[var(--text-secondary)] hover:text-[var(--charcoal)] transition-colors"
+              className="text-[1.2rem] tracking-[0.2em] uppercase no-underline text-[var(--text-secondary)] hover:text-[var(--charcoal)] transition-colors min-h-[44px] flex items-center"
               style={{ fontFamily: "var(--font-body), 'Outfit', sans-serif" }}
             >
               {link.label}

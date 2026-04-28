@@ -24,6 +24,33 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Can Hypnotherapy Help With Anxiety? What Science and 25 Years of Practice Reveal",
+    excerpt:
+      "Anxiety lives in the subconscious mind — and that is where lasting change must happen. Discover how clinical hypnotherapy accesses and rewires the deep patterns driving your anxiety, what science says, and what a session actually looks like.",
+    date: "April 25, 2026",
+    category: "Hypnotherapy",
+    bg: "bg-sage-light",
+    link: "/blog/hypnotherapy-for-anxiety",
+  },
+  {
+    title: "Subconscious Mind Reprogramming: The Complete Guide to Lasting Change",
+    excerpt:
+      "Why does willpower fail? Because you are trying to change your life using only five percent of your mind. Learn how subconscious beliefs form, the signs they are sabotaging you, and proven methods for reprogramming them permanently.",
+    date: "April 20, 2026",
+    category: "Subconscious Mind",
+    bg: "bg-peach-light",
+    link: "/blog/subconscious-mind-reprogramming",
+  },
+  {
+    title: "Understanding Your Vedic Birth Chart: What It Reveals About Your Life Path",
+    excerpt:
+      "Your Vedic birth chart is not a fortune-telling tool — it is a map of your karma, subconscious patterns, and soul purpose. Learn the difference between Western and Vedic astrology, what the houses and planets mean, and how Dr. Nidhi uses the chart for transformation.",
+    date: "April 15, 2026",
+    category: "Vedic Astrology",
+    bg: "bg-lavender-light",
+    link: "/blog/vedic-astrology-birth-chart-reading",
+  },
+  {
     title: "Why Your Birth Chart Is Not a Fortune-Telling Tool",
     excerpt:
       "Most people approach Vedic astrology expecting predictions. But the real power of your birth chart lies in what it reveals about your subconscious programming — the invisible code that shapes every decision, relationship, and outcome in your life.",

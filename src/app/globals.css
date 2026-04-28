@@ -257,3 +257,28 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar-track { background: var(--cream); }
 ::-webkit-scrollbar-thumb { background: rgba(197, 166, 107, 0.3); border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--soft-gold); }
+
+/* ==================== MOBILE RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 1.2rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.85rem 1.8rem;
+    min-height: 44px;
+  }
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-primary,
+  .btn-secondary {
+    min-height: 44px;
+  }
+}
