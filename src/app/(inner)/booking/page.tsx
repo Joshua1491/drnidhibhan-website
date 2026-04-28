@@ -228,8 +228,8 @@ export default function BookingPage() {
                   "Through the appropriate modality or combination of modalities, the real work begins. You will leave with clarity, actionable insights, and a foundation for lasting change.",
               },
             ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="gold-text font-heading text-5xl font-light mb-4">{item.step}</div>
+              <div key={item.step} className="text-left md:text-center">
+                <div className="gold-text font-heading text-4xl md:text-5xl font-light mb-4">{item.step}</div>
                 <h3 className="font-heading text-2xl text-charcoal mb-3">{item.title}</h3>
                 <p className="text-text-secondary font-body text-sm leading-relaxed">
                   {item.description}

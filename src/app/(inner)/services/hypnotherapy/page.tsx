@@ -272,7 +272,7 @@ export default function HypnotherapyPage() {
           </div>
           <div className="space-y-6">
             {processSteps.map((item) => (
-              <div key={item.step} className="card flex gap-6 items-start">
+              <div key={item.step} className="card flex gap-4 md:gap-6 items-start">
                 <div
                   className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-sm font-medium"
                   style={{

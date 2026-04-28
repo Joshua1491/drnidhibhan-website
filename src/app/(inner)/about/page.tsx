@@ -172,7 +172,7 @@ export default function AboutPage() {
                 className={`card ${item.bg} animate-fade-up`}
                 style={{ animationDelay: `${i * 0.15}s` }}
               >
-                <h3 className="font-heading text-2xl font-normal text-charcoal mb-3">
+                <h3 className="font-heading text-xl md:text-2xl font-normal text-charcoal mb-3">
                   {item.title}
                 </h3>
                 <p className="text-text-secondary font-body text-sm leading-relaxed">
@@ -235,7 +235,7 @@ export default function AboutPage() {
                 className="animate-fade-up"
                 style={{ animationDelay: `${i * 0.12}s` }}
               >
-                <div className="gold-text font-heading text-4xl md:text-5xl font-light mb-2">
+                <div className="gold-text font-heading text-3xl md:text-5xl font-light mb-2">
                   {stat.number}
                 </div>
                 <div className="text-text-muted font-body text-sm tracking-wide uppercase">

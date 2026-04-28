@@ -177,10 +177,9 @@ export default function LifeCoachingPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative overflow-hidden text-center"
+        className="relative overflow-hidden text-center section-padding"
         style={{
           background: "linear-gradient(160deg, var(--cream) 0%, var(--blush-light) 40%, var(--lavender-light) 100%)",
-          padding: "6rem 2rem 5rem",
         }}
       >
         {/* Decorative circle */}
@@ -345,7 +344,7 @@ export default function LifeCoachingPage() {
             {steps.map((step, i) => (
               <div
                 key={step.number}
-                className={`card flex flex-col md:flex-row gap-6 items-start animate-fade-up delay-${(i + 1) * 200}`}
+                className={`card flex flex-col md:flex-row gap-4 md:gap-6 items-start animate-fade-up delay-${(i + 1) * 200}`}
               >
                 <div
                   className={`${step.bg} shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center`}

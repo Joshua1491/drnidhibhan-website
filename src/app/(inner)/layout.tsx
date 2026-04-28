@@ -9,7 +9,7 @@ export default function InnerLayout({
   return (
     <>
       <Navigation />
-      <main style={{ paddingTop: "5rem" }}>{children}</main>
+      <main className="pt-16 md:pt-20">{children}</main>
       <Footer />
     </>
   );
