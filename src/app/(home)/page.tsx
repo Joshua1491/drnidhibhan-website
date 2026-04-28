@@ -393,7 +393,8 @@ section{position:relative;z-index:1;padding:7rem 2rem}
 .about-visual{position:relative}
 .about-image-frame{position:relative;aspect-ratio:3/3.8;border-radius:250px 250px 24px 24px;overflow:hidden;background:linear-gradient(160deg,rgba(243,239,248,0.8),rgba(251,240,234,0.7) 35%,rgba(245,237,227,0.8) 65%,rgba(249,240,235,0.7));border:1.5px solid rgba(195,166,107,0.18);box-shadow:0 30px 90px rgba(60,43,61,0.1),0 0 0 1px rgba(197,166,107,0.06) inset,0 0 80px rgba(197,166,107,0.04)}
 .about-image-frame::before{content:'';position:absolute;inset:-4px;border-radius:254px 254px 28px 28px;background:linear-gradient(180deg,rgba(197,166,107,0.2) 0%,rgba(197,166,107,0.06) 30%,transparent 50%,rgba(196,160,185,0.06) 80%,rgba(196,160,185,0.12) 100%);z-index:-1}
-.about-image-inner{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.about-image-inner{width:100%;height:100%;position:relative}
+.about-photo{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block}
 .about-mandala{opacity:.2;animation:spin 90s linear infinite}
 .about-image-frame::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120%;height:120%;border-radius:50%;background:radial-gradient(circle,rgba(197,166,107,0.06) 0%,transparent 60%);pointer-events:none;animation:glowPulse 6s ease-in-out infinite}
 @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
@@ -892,44 +893,11 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
             <div className="about-visual reveal">
               <div className="about-image-frame">
                 <div className="about-image-inner">
-                  <svg className="about-mandala" width="280" height="280" viewBox="0 0 280 280" fill="none">
-                    <circle cx="140" cy="140" r="135" stroke="#C5A66B" strokeWidth=".8" />
-                    <circle cx="140" cy="140" r="125" stroke="#C4A0B9" strokeWidth=".4" strokeDasharray="3 6" />
-                    <circle cx="140" cy="140" r="110" stroke="#C5A66B" strokeWidth=".6" />
-                    <circle cx="140" cy="140" r="95" stroke="#D4A0A0" strokeWidth=".5" />
-                    <circle cx="140" cy="140" r="75" stroke="#C5A66B" strokeWidth=".4" strokeDasharray="2 5" />
-                    <circle cx="140" cy="140" r="55" stroke="#8BAF8E" strokeWidth=".4" />
-                    <circle cx="140" cy="140" r="35" stroke="#C5A66B" strokeWidth=".5" />
-                    <circle cx="140" cy="140" r="15" stroke="#C4A0B9" strokeWidth=".3" />
-                    <g>
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C5A66B" strokeWidth=".5" transform="rotate(0 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C4A0B9" strokeWidth=".5" transform="rotate(30 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C5A66B" strokeWidth=".5" transform="rotate(60 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#D4A0A0" strokeWidth=".5" transform="rotate(90 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C5A66B" strokeWidth=".5" transform="rotate(120 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C4A0B9" strokeWidth=".5" transform="rotate(150 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C5A66B" strokeWidth=".5" transform="rotate(180 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#D4A0A0" strokeWidth=".5" transform="rotate(210 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C5A66B" strokeWidth=".5" transform="rotate(240 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C4A0B9" strokeWidth=".5" transform="rotate(270 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#C5A66B" strokeWidth=".5" transform="rotate(300 140 140)" />
-                      <ellipse cx="140" cy="35" rx="14" ry="35" stroke="#D4A0A0" strokeWidth=".5" transform="rotate(330 140 140)" />
-                    </g>
-                    <g>
-                      <ellipse cx="140" cy="70" rx="10" ry="25" stroke="#8BAF8E" strokeWidth=".4" transform="rotate(0 140 140)" />
-                      <ellipse cx="140" cy="70" rx="10" ry="25" stroke="#C5A66B" strokeWidth=".4" transform="rotate(45 140 140)" />
-                      <ellipse cx="140" cy="70" rx="10" ry="25" stroke="#8BAF8E" strokeWidth=".4" transform="rotate(90 140 140)" />
-                      <ellipse cx="140" cy="70" rx="10" ry="25" stroke="#C5A66B" strokeWidth=".4" transform="rotate(135 140 140)" />
-                      <ellipse cx="140" cy="70" rx="10" ry="25" stroke="#8BAF8E" strokeWidth=".4" transform="rotate(180 140 140)" />
-                      <ellipse cx="140" cy="70" rx="10" ry="25" stroke="#C5A66B" strokeWidth=".4" transform="rotate(225 140 140)" />
-                      <ellipse cx="140" cy="70" rx="10" ry="25" stroke="#8BAF8E" strokeWidth=".4" transform="rotate(270 140 140)" />
-                      <ellipse cx="140" cy="70" rx="10" ry="25" stroke="#C5A66B" strokeWidth=".4" transform="rotate(315 140 140)" />
-                    </g>
-                    <polygon points="140,50 220,200 60,200" stroke="#C5A66B" strokeWidth=".5" fill="rgba(197,166,107,0.02)" />
-                    <polygon points="140,230 60,80 220,80" stroke="#C4A0B9" strokeWidth=".5" fill="rgba(196,160,185,0.02)" />
-                    <polygon points="140,120 146,132 160,132 149,140 153,153 140,145 127,153 131,140 120,132 134,132" stroke="#C5A66B" strokeWidth=".4" fill="rgba(197,166,107,0.05)" />
-                    <circle cx="140" cy="140" r="4" fill="#C5A66B" opacity=".3" />
-                  </svg>
+                  <img
+                    src="/images/dr-nidhi-bhan.jpg"
+                    alt="Dr. Nidhi Bhan — Subconscious Mind Transformation Expert, Hypnotherapist and Life Coach in Toronto"
+                    className="about-photo"
+                  />
                   <div className="about-photo-label">
                     <span>Dr. Nidhi Bhan</span>
                   </div>
