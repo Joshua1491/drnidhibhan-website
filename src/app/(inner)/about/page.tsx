@@ -75,30 +75,19 @@ export default function AboutPage() {
       {/* ===== HER STORY ===== */}
       <section className="section-padding bg-blush-light">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          {/* Professional portrait placeholder */}
+          {/* Professional portrait */}
           <div className="animate-fade-up">
             <div
-              className="w-full aspect-[3/4] rounded-3xl flex flex-col items-center justify-center relative overflow-hidden"
+              className="w-full aspect-[3/4] rounded-3xl relative overflow-hidden"
               style={{
-                background: "linear-gradient(160deg, rgba(243,239,248,0.6) 0%, rgba(237,228,220,0.4) 50%, rgba(237,243,238,0.5) 100%)",
                 border: "1px solid rgba(197,166,107,0.15)",
               }}
             >
-              <svg viewBox="0 0 100 100" className="w-20 h-20 mb-4 opacity-25">
-                <path d="M25 80 Q25 55 40 40 Q50 30 50 50 Q50 30 60 40 Q75 55 75 80" fill="none" stroke="#C5A66B" strokeWidth="1.5" strokeLinecap="round"/>
-                <path d="M20 82 Q20 60 35 45 Q45 35 50 48" fill="none" stroke="#C5A66B" strokeWidth="1.2" strokeLinecap="round" opacity="0.6"/>
-                <path d="M80 82 Q80 60 65 45 Q55 35 50 48" fill="none" stroke="#C5A66B" strokeWidth="1.2" strokeLinecap="round" opacity="0.6"/>
-                <circle cx="50" cy="55" r="3" fill="#D4A855" opacity="0.4"/>
-              </svg>
-              <span
-                className="text-lg font-light text-charcoal tracking-wide"
-                style={{ fontFamily: "var(--font-heading), 'Cormorant Garamond', serif" }}
-              >
-                Dr. Nidhi Bhan
-              </span>
-              <span className="text-text-muted text-xs tracking-[0.25em] uppercase font-body mt-1">
-                25+ Years of Transformation
-              </span>
+              <img
+                src="/images/dr-nidhi-bhan-studio.jpg"
+                alt="Dr. Nidhi Bhan in a professional radio studio setting — Hypnotherapist, Life Coach and Vedic Astrologer in Toronto"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </div>
 
