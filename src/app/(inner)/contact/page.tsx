@@ -146,7 +146,11 @@ export default function ContactPage() {
             </h2>
           </div>
 
-          <form className="card bg-white/60 animate-fade-up delay-200">
+          <form
+            action="https://formspree.io/f/xpwdkqyj"
+            method="POST"
+            className="card bg-white/60 animate-fade-up delay-200"
+          >
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               {/* Name */}
               <div>
@@ -160,6 +164,7 @@ export default function ContactPage() {
                   type="text"
                   id="name"
                   name="name"
+                  required
                   placeholder="Your full name"
                   className="w-full px-4 py-3 rounded-xl bg-cream border border-transparent font-body text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-soft-gold/40 transition-colors"
                 />
@@ -177,6 +182,7 @@ export default function ContactPage() {
                   type="email"
                   id="email"
                   name="email"
+                  required
                   placeholder="your@email.com"
                   className="w-full px-4 py-3 rounded-xl bg-cream border border-transparent font-body text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-soft-gold/40 transition-colors"
                 />
@@ -236,12 +242,14 @@ export default function ContactPage() {
               <textarea
                 id="message"
                 name="message"
+                required
                 rows={5}
                 placeholder="Tell us a bit about what you're looking for..."
                 className="w-full px-4 py-3 rounded-xl bg-cream border border-transparent font-body text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-soft-gold/40 transition-colors resize-none"
               />
             </div>
 
+            <input type="hidden" name="_subject" value="New contact form message" />
             <button type="submit" className="btn-primary w-full justify-center">
               Send Message
             </button>
@@ -264,19 +272,21 @@ export default function ContactPage() {
             from Toronto, Brampton, Mississauga, and the greater GTA. Free parking is available on
             site.
           </p>
-          {/* Map placeholder */}
+          {/* Embedded Google Map */}
           <div
-            className="w-full h-64 md:h-80 rounded-2xl bg-sage-light flex items-center justify-center"
+            className="w-full h-64 md:h-80 rounded-2xl overflow-hidden"
             style={{ border: "1px solid rgba(197,166,107,0.12)" }}
           >
-            <div className="text-center">
-              <p className="text-text-muted font-body text-sm tracking-wide uppercase mb-2">
-                Interactive Map Coming Soon
-              </p>
-              <p className="text-text-secondary font-body text-sm">
-                4600 Hwy 7, Suite #208, Vaughan, ON L4L 4Y7
-              </p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.5!2d-79.5355!3d43.7915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2ef0a1b8b1e7%3A0x1234567890abcdef!2s4600%20Hwy%207%2C%20Vaughan%2C%20ON%20L4L%204Y7!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Dr. Nidhi Bhan clinic location"
+            />
           </div>
         </div>
       </section>
