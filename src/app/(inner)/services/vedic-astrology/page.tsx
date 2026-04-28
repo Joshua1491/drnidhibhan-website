@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Vedic Astrology Toronto | Birth Chart Analysis | Dr. Nidhi Bhan",
+  title: "Vedic Astrology Toronto | Birth Chart Analysis",
   description:
     "Expert Vedic astrology and birth chart analysis in Toronto with Dr. Nidhi Bhan. Gain clarity on career, relationships, health, and life purpose through Jyotish wisdom.",
   keywords: [

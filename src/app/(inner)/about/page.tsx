@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Dr. Nidhi Bhan | Subconscious Mind Transformation Expert",
+  title: "About | Subconscious Mind Transformation Expert",
   description:
     "Learn about Dr. Nidhi Bhan's 25+ year journey from Vedic astrology to subconscious mind transformation. Canada-based expert in hypnotherapy, past life regression, and birth-chart-guided life coaching.",
   alternates: {

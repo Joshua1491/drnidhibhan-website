@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services | Dr. Nidhi Bhan",
+  title: "Healing Services",
   description:
     "Explore Dr. Nidhi Bhan's holistic healing services in Toronto — Vedic Astrology, Hypnotherapy, Past Life Regression, Subliminal Reconditioning, Vastu Harmonics, and Tarot Readings.",
   keywords: [

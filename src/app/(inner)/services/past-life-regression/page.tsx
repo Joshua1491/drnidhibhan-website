@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Past Life Regression Toronto | Dr. Nidhi Bhan",
+  title: "Past Life Regression Toronto",
   description:
     "Experience past life regression therapy in Toronto with Dr. Nidhi Bhan. Heal karmic patterns, release deep-seated fears, and uncover the soul memories shaping your present life.",
   keywords: [

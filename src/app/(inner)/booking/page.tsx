@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Book a Session | Dr. Nidhi Bhan",
+  title: "Book a Session",
   description:
     "Book a consultation with Dr. Nidhi Bhan. Choose from Vedic astrology, hypnotherapy, past life regression, life coaching, and subliminal reconditioning sessions. In-person in Vaughan, Ontario or virtual worldwide.",
   alternates: {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Hypnotherapy Toronto | Clinical Hypnotherapy | Dr. Nidhi Bhan",
+  title: "Hypnotherapy Toronto | Clinical Hypnotherapy",
   description:
     "Experience clinical hypnotherapy in Toronto with Dr. Nidhi Bhan. Subconscious reprogramming for anxiety, trauma, habits, and emotional healing. Book your session today.",
   keywords: [

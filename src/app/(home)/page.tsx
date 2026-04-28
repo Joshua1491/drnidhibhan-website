@@ -1142,7 +1142,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 and karmic imprints that shape your decisions, relationships, and self-sabotage cycles.
               </p>
               <a href="/services/vedic-astrology" className="learn-more">
-                Explore {"\u2192"}
+                Explore Birth Chart Reading {"\u2192"}
               </a>
             </div>
             <div className="service-card reveal reveal-delay-1">
@@ -1161,7 +1161,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 beliefs at the root — where talk therapy often can&apos;t reach.
               </p>
               <a href="/services/hypnotherapy" className="learn-more">
-                Explore {"\u2192"}
+                Explore Hypnotherapy {"\u2192"}
               </a>
             </div>
             <div className="service-card reveal reveal-delay-2">
@@ -1180,7 +1180,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 entanglements — and release them with white light healing.
               </p>
               <a href="/services/past-life-regression" className="learn-more">
-                Explore {"\u2192"}
+                Explore Past Life Regression {"\u2192"}
               </a>
             </div>
             <div className="service-card reveal reveal-delay-3">
@@ -1199,8 +1199,8 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 techniques to overwrite limiting thought patterns with empowering new beliefs — working
                 beneath awareness, where lasting change actually happens.
               </p>
-              <a href="/services" className="learn-more">
-                Explore {"\u2192"}
+              <a href="/services/subliminal-reconditioning" className="learn-more">
+                Explore Subliminal Reconditioning {"\u2192"}
               </a>
             </div>
             <div className="service-card reveal reveal-delay-4">
@@ -1218,8 +1218,8 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 Bhan recalibrates the energy of your home or workspace — removing blockages in the
                 physical space that mirror blockages in your mind.
               </p>
-              <a href="/services" className="learn-more">
-                Explore {"\u2192"}
+              <a href="/services/vastu-harmonics" className="learn-more">
+                Explore Vastu Harmonics {"\u2192"}
               </a>
             </div>
             <div className="service-card reveal reveal-delay-5">
@@ -1239,8 +1239,8 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
                 creates a complete picture of where you&apos;ve been, where you are, and where
                 you&apos;re headed.
               </p>
-              <a href="/services" className="learn-more">
-                Explore {"\u2192"}
+              <a href="/services/tarot-reading" className="learn-more">
+                Explore Tarot Reading {"\u2192"}
               </a>
             </div>
           </div>

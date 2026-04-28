@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog & Insights | Dr. Nidhi Bhan",
+  title: "Blog & Insights",
   description:
     "Explore articles on subconscious mind transformation, Vedic astrology, hypnotherapy, life coaching, and personal growth by Dr. Nidhi Bhan.",
   alternates: {
     canonical: "https://www.drnidhibhan.com/blog",
   },
   openGraph: {
-    title: "Blog & Insights | Dr. Nidhi Bhan",
+    title: "Blog & Insights",
     description:
       "Insights and wisdom on subconscious transformation, astrology, hypnotherapy, and holistic personal development.",
     url: "https://www.drnidhibhan.com/blog",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog & Insights | Dr. Nidhi Bhan",
+    title: "Blog & Insights",
     description:
       "Articles on subconscious transformation, Vedic astrology, hypnotherapy & personal growth.",
   },

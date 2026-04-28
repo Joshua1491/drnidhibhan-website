@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Life Coaching Toronto | Subconscious Mind Transformation | Dr. Nidhi Bhan",
+  title: "Life Coaching Toronto | Subconscious Mind Transformation",
   description:
     "Transform your life with Dr. Nidhi Bhan's unique life coaching approach combining subconscious mind transformation, hypnotherapy, and birth chart guidance. 25+ years experience. Toronto & worldwide virtual sessions.",
   keywords: [

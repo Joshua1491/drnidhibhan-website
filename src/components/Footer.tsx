@@ -128,9 +128,14 @@ export default function Footer() {
           <p className="text-[0.78rem] opacity-40">
             &copy; {new Date().getFullYear()} Dr. Nidhi Bhan. All rights reserved.
           </p>
-          <p className="text-[0.78rem] opacity-30">
-            Transforming lives through the power of the subconscious mind.
-          </p>
+          <div className="flex gap-6">
+            <Link href="/privacy" className="text-[0.78rem] opacity-30 no-underline hover:opacity-60 transition-opacity" style={{ color: "rgba(255,255,255,0.7)" }}>
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="text-[0.78rem] opacity-30 no-underline hover:opacity-60 transition-opacity" style={{ color: "rgba(255,255,255,0.7)" }}>
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
