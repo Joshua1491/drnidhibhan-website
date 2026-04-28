@@ -560,83 +560,83 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
 /* ==================== RESPONSIVE ==================== */
 @media(max-width:1024px){.services-grid,.testimonials-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:3rem}}
 @media(max-width:768px){
-  nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}
+  nav{padding:.9rem 1.5rem}.nav-links{display:none}.hamburger{display:flex}
   .nav-brand-name{font-size:1.25rem}
   .nav-brand-sub{font-size:.58rem;letter-spacing:.22em}
-  .hero{min-height:auto;padding-top:0}
-  .hero h1{font-size:2.6rem;line-height:1.12;margin-bottom:1.2rem}
-  .hero-sub{max-width:100%;font-size:.95rem;line-height:1.7;margin-bottom:2rem}
-  .hero-content{padding:6rem 1.5rem 3rem;max-width:100%}
-  .hero-badge{font-size:.6rem;padding:.5rem 1.2rem;letter-spacing:.22em}
-  #heroCanvas{opacity:.25}
-  .zodiac-wheel,.inner-wheel,.sacred-core{opacity:.4}
+  .hero{min-height:100vh;min-height:100svh;padding-top:0;display:flex;align-items:center;justify-content:center}
+  .hero h1{font-size:2.8rem;line-height:1.12;margin-bottom:1.4rem}
+  .hero-sub{max-width:100%;font-size:.95rem;line-height:1.75;margin-bottom:2.2rem}
+  .hero-content{padding:5rem 1.8rem 4rem;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .hero-badge{font-size:.6rem;padding:.55rem 1.4rem;letter-spacing:.22em}
+  #heroCanvas{opacity:.15}
+  .zodiac-wheel,.inner-wheel,.sacred-core{opacity:.35}
   .hero-glow{width:300px;height:300px}
-  .about{padding-top:4rem;padding-bottom:5rem}
+  .about{padding:5rem 1.5rem}
   .about-grid{grid-template-columns:1fr;gap:2.5rem}.about-visual{max-width:320px;margin:0 auto}
   .about-text h3{font-size:2rem;text-align:center}
-  .about-text p{font-size:.9rem;text-align:center}
-  .about-stats{grid-template-columns:repeat(3,1fr);gap:1rem}
+  .about-text p{font-size:.92rem;text-align:center;line-height:1.75}
+  .about-stats{grid-template-columns:repeat(3,1fr);gap:1.2rem}
   .stat-item .stat-number{font-size:1.8rem}
-  .stat-item .stat-label{font-size:.6rem}
+  .stat-item .stat-label{font-size:.62rem}
   .floating-badge{left:0;bottom:2rem;padding:.8rem 1rem;border-radius:14px}
   .floating-badge .number{font-size:1.6rem}
   .floating-badge .label{font-size:.6rem}
   .floating-badge-2{right:.5rem;top:1rem;padding:.7rem 1rem}
   .floating-badge-2 .icon-circle{width:30px;height:30px;font-size:.85rem}
   .floating-badge-2 .text{font-size:.65rem}
-  .services{padding:4rem 1.2rem 4rem}
+  .services{padding:5rem 1.5rem}
   .services-grid,.testimonials-grid{grid-template-columns:1fr}
   .services-header{margin-bottom:2.5rem}
-  .service-card{padding:2rem 1.5rem;border-radius:20px}
+  .service-card{padding:2.2rem 1.6rem;border-radius:20px}
   .service-card h3{font-size:1.3rem}
-  .service-card p{font-size:.85rem}
+  .service-card p{font-size:.88rem;line-height:1.7}
   .service-card .card-number{display:none}
-  .signature{padding:4rem 1.2rem 5rem}
-  .signature-card{padding:2rem 1.2rem;border-radius:22px;margin-top:2rem}
+  .signature{padding:5rem 1.5rem}
+  .signature-card{padding:2.2rem 1.5rem;border-radius:22px;margin-top:2rem}
   .signature-card h3{font-size:2rem}
-  .signature-card>p{font-size:.88rem}
-  .signature-features{grid-template-columns:1fr;padding:1.2rem;gap:.8rem}
-  .signature-feature{font-size:.84rem}
-  .testimonials{padding:4rem 1.2rem}
+  .signature-card>p{font-size:.9rem}
+  .signature-features{grid-template-columns:1fr;padding:1.4rem;gap:1rem}
+  .signature-feature{font-size:.86rem}
+  .testimonials{padding:5rem 1.5rem}
   .testimonials-header{margin-bottom:2.5rem}
-  .testimonial-card{padding:2rem 1.5rem 1.5rem;border-radius:20px}
-  .testimonial-card blockquote{font-size:1rem}
-  .contact{padding:4rem 1.2rem 4rem}
-  .contact-grid{grid-template-columns:1fr;gap:1rem}
+  .testimonial-card{padding:2.2rem 1.6rem 1.8rem;border-radius:20px}
+  .testimonial-card blockquote{font-size:1rem;line-height:1.7}
+  .contact{padding:5rem 1.5rem}
+  .contact-grid{grid-template-columns:1fr;gap:1.2rem}
   .contact-item{padding:2rem 1.5rem}
-  .cta-section{padding:5rem 1.2rem}
+  .cta-section{padding:5rem 1.5rem}
   .cta-section h2{font-size:2.2rem}
-  .cta-section p{font-size:.92rem}
+  .cta-section p{font-size:.94rem;line-height:1.75}
   .cta-decor{width:250px;height:250px}
-  section{padding:4rem 1.2rem}
+  section{padding:5rem 1.5rem}
   .section-label{font-size:.62rem;letter-spacing:.28em}
   .section-label::before,.section-label::after{flex:0 0 14px}
-  .section-title{margin-bottom:.8rem}
-  .section-subtitle{font-size:.92rem}
+  .section-title{margin-bottom:1rem}
+  .section-subtitle{font-size:.94rem;line-height:1.75}
   .scroll-indicator{display:none}
-  footer{padding:2.5rem 1.2rem 2rem}
+  footer{padding:2.5rem 1.5rem 2rem}
   .footer-content{flex-direction:column;gap:1.5rem;text-align:center}
   .footer-links{flex-wrap:wrap;justify-content:center;gap:1.5rem}
-  .footer-copy{font-size:.68rem}
+  .footer-copy{font-size:.7rem}
   .marquee-item{font-size:1.1rem;padding:0 1.5rem}
   .btn-primary,.btn-secondary,.nav-cta,.hero-buttons a,.learn-more,.contact-item a{min-height:44px;display:inline-flex;align-items:center}
 }
 @media(max-width:480px){
-  .hero h1{font-size:2.1rem;letter-spacing:-.01em}
-  .hero-sub{font-size:.88rem;line-height:1.65}
-  .hero-content{padding:5.5rem 1rem 2.5rem}
-  .hero-badge{font-size:.55rem;padding:.45rem 1rem}
-  .hero-buttons{flex-direction:column;align-items:stretch}
-  .btn-primary,.btn-secondary{width:100%;justify-content:center;min-height:44px;font-size:.78rem;padding:.85rem 1.5rem}
-  .about-stats{grid-template-columns:repeat(3,1fr);gap:.6rem}
+  .hero h1{font-size:2.3rem;letter-spacing:-.01em}
+  .hero-sub{font-size:.9rem;line-height:1.7}
+  .hero-content{padding:4.5rem 1.5rem 3.5rem}
+  .hero-badge{font-size:.55rem;padding:.5rem 1.1rem}
+  .hero-buttons{flex-direction:column;align-items:center;gap:.8rem}
+  .btn-primary,.btn-secondary{min-width:260px;max-width:320px;justify-content:center;min-height:44px;font-size:.78rem;padding:.9rem 1.8rem}
+  .about-stats{grid-template-columns:repeat(3,1fr);gap:.8rem}
   .stat-item .stat-number{font-size:1.5rem}
-  .stat-item .stat-label{font-size:.55rem;letter-spacing:.1em}
-  .about-text h3{font-size:1.7rem}
-  .about-text p{font-size:.86rem}
-  .service-card{padding:1.8rem 1.2rem}
-  .signature-card h3{font-size:1.7rem}
+  .stat-item .stat-label{font-size:.58rem;letter-spacing:.12em}
+  .about-text h3{font-size:1.8rem}
+  .about-text p{font-size:.88rem}
+  .service-card{padding:2rem 1.4rem}
+  .signature-card h3{font-size:1.8rem}
   .cta-section h2{font-size:1.9rem}
-  .cta-section p{font-size:.86rem;margin-bottom:2rem}
+  .cta-section p{font-size:.88rem;margin-bottom:2rem}
   .contact-item h4{font-size:1.1rem}
 }
 `,
