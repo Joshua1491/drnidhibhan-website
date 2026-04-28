@@ -14,6 +14,12 @@ export const metadata: Metadata = {
       "Begin your transformation journey. Book an in-person or virtual session with Dr. Nidhi Bhan.",
     url: "https://www.drnidhibhan.com/booking",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book a Session | Dr. Nidhi Bhan",
+    description:
+      "Book a life coaching, hypnotherapy, or Vedic astrology session. In-person in Vaughan, Ontario or virtual worldwide.",
+  },
 };
 
 const services = [

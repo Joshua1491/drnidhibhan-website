@@ -14,6 +14,12 @@ export const metadata: Metadata = {
       "Insights and wisdom on subconscious transformation, astrology, hypnotherapy, and holistic personal development.",
     url: "https://www.drnidhibhan.com/blog",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog & Insights | Dr. Nidhi Bhan",
+    description:
+      "Articles on subconscious transformation, Vedic astrology, hypnotherapy & personal growth.",
+  },
 };
 
 const posts = [
@@ -73,6 +79,24 @@ const posts = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Blog & Insights — Dr. Nidhi Bhan",
+  description:
+    "Articles on subconscious mind transformation, Vedic astrology, hypnotherapy, and personal growth.",
+  url: "https://www.drnidhibhan.com/blog",
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: posts.map((post, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: post.title,
+      url: `https://www.drnidhibhan.com${post.link}`,
+    })),
+  },
+};
+
 const categoryColors: Record<string, string> = {
   "Vedic Astrology": "bg-lavender/60 text-deep-plum",
   "Subconscious Mind": "bg-peach/60 text-deep-plum",
@@ -85,6 +109,11 @@ const categoryColors: Record<string, string> = {
 export default function BlogPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* ===== HERO ===== */}
       <section className="section-padding bg-cream text-center">
         <div className="max-w-4xl mx-auto animate-fade-up">

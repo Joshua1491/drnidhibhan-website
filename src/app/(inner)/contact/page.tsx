@@ -14,11 +14,46 @@ export const metadata: Metadata = {
       "Reach out to Dr. Nidhi Bhan for in-person or virtual sessions. Vaughan, Ontario clinic open Mon-Sat 8am-8pm EST.",
     url: "https://www.drnidhibhan.com/contact",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Dr. Nidhi Bhan",
+    description:
+      "Get in touch for life coaching, hypnotherapy & Vedic astrology consultations. Vaughan, Ontario & virtual worldwide.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Dr. Nidhi Bhan",
+  description:
+    "Subconscious Mind Transformation Expert offering life coaching, hypnotherapy, past life regression, and Vedic astrology consultations.",
+  url: "https://www.drnidhibhan.com/contact",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "4600 Hwy 7, Suite #208",
+    addressLocality: "Vaughan",
+    addressRegion: "Ontario",
+    postalCode: "L4L 4Y7",
+    addressCountry: "CA",
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "08:00",
+    closes: "20:00",
+  },
+  hasMap: "https://www.google.com/maps?q=4600+Hwy+7,+Vaughan,+ON+L4L+4Y7",
 };
 
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* ===== HERO ===== */}
       <section className="section-padding bg-cream text-center">
         <div className="max-w-4xl mx-auto animate-fade-up">

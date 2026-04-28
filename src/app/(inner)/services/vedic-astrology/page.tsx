@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.drnidhibhan.com/services/vedic-astrology",
   },
+  openGraph: {
+    title: "Vedic Astrology & Birth Chart Analysis — Dr. Nidhi Bhan",
+    description:
+      "Expert Vedic astrology and birth chart analysis in Toronto. Gain clarity on career, relationships, health & life purpose through Jyotish wisdom.",
+    url: "https://www.drnidhibhan.com/services/vedic-astrology",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vedic Astrology Toronto — Dr. Nidhi Bhan",
+    description:
+      "Birth chart analysis for career, relationships & life purpose. Expert Vedic astrology in Toronto.",
+  },
 };
 
 const jsonLd = {

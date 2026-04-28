@@ -5,6 +5,49 @@ export const metadata: Metadata = {
   title: "Services | Dr. Nidhi Bhan",
   description:
     "Explore Dr. Nidhi Bhan's holistic healing services in Toronto — Vedic Astrology, Hypnotherapy, Past Life Regression, Subliminal Reconditioning, Vastu Harmonics, and Tarot Readings.",
+  keywords: [
+    "healing services Toronto",
+    "holistic healing Toronto",
+    "Vedic astrology services",
+    "hypnotherapy services",
+    "past life regression services",
+    "subliminal reconditioning",
+    "spiritual healing Toronto",
+  ],
+  alternates: {
+    canonical: "https://www.drnidhibhan.com/services",
+  },
+  openGraph: {
+    title: "Healing Services — Dr. Nidhi Bhan",
+    description:
+      "Explore a curated suite of ancient wisdom and modern therapeutic techniques — Vedic Astrology, Hypnotherapy, Past Life Regression, and more.",
+    url: "https://www.drnidhibhan.com/services",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Healing Services — Dr. Nidhi Bhan",
+    description:
+      "Vedic Astrology, Hypnotherapy, Past Life Regression & more. Holistic healing services in Toronto.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Dr. Nidhi Bhan's Healing Services",
+  description:
+    "A curated suite of ancient wisdom and modern therapeutic techniques for holistic healing and transformation.",
+  url: "https://www.drnidhibhan.com/services",
+  numberOfItems: 7,
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Birth Chart Intelligence — Vedic Astrology", url: "https://www.drnidhibhan.com/services/vedic-astrology" },
+    { "@type": "ListItem", position: 2, name: "Clinical Hypnotherapy", url: "https://www.drnidhibhan.com/services/hypnotherapy" },
+    { "@type": "ListItem", position: 3, name: "Past Life Regression Therapy", url: "https://www.drnidhibhan.com/services/past-life-regression" },
+    { "@type": "ListItem", position: 4, name: "Subliminal Reconditioning", url: "https://www.drnidhibhan.com/services/subliminal-reconditioning" },
+    { "@type": "ListItem", position: 5, name: "Vastu Harmonics", url: "https://www.drnidhibhan.com/services/vastu-harmonics" },
+    { "@type": "ListItem", position: 6, name: "Tarot + Intuitive Reading", url: "https://www.drnidhibhan.com/services/tarot-reading" },
+    { "@type": "ListItem", position: 7, name: "Life Coaching — Subconscious Mind Transformation", url: "https://www.drnidhibhan.com/services/life-coaching" },
+  ],
 };
 
 const services = [
@@ -67,6 +110,11 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero */}
       <section
         className="section-padding text-center"

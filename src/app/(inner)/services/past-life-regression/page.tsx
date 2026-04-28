@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.drnidhibhan.com/services/past-life-regression",
   },
+  openGraph: {
+    title: "Past Life Regression Therapy Toronto — Dr. Nidhi Bhan",
+    description:
+      "Heal karmic patterns, release deep-seated fears & uncover soul memories shaping your present life. Past life regression therapy in Toronto.",
+    url: "https://www.drnidhibhan.com/services/past-life-regression",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Past Life Regression Toronto — Dr. Nidhi Bhan",
+    description:
+      "Heal karmic patterns & release deep-seated fears. Past life regression therapy in Toronto.",
+  },
 };
 
 const jsonLd = {

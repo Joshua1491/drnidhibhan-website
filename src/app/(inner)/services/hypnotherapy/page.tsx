@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.drnidhibhan.com/services/hypnotherapy",
   },
+  openGraph: {
+    title: "Clinical Hypnotherapy Toronto — Dr. Nidhi Bhan",
+    description:
+      "Subconscious reprogramming for anxiety, trauma, habits, and emotional healing. Clinical hypnotherapy in Toronto & virtual worldwide.",
+    url: "https://www.drnidhibhan.com/services/hypnotherapy",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Clinical Hypnotherapy Toronto — Dr. Nidhi Bhan",
+    description:
+      "Subconscious reprogramming for anxiety, trauma, habits & emotional healing in Toronto.",
+  },
 };
 
 const jsonLd = {

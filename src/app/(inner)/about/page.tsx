@@ -14,6 +14,12 @@ export const metadata: Metadata = {
       "25+ years helping thousands break free from invisible mental patterns through subconscious mind transformation, hypnotherapy, and birth-chart-guided coaching.",
     url: "https://www.drnidhibhan.com/about",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Dr. Nidhi Bhan | Transformation Expert",
+    description:
+      "25+ years helping thousands break free from invisible mental patterns through subconscious mind transformation.",
+  },
 };
 
 const jsonLd = {
