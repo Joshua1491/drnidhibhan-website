@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function HomePage() {
   useEffect(() => {
@@ -190,7 +190,7 @@ export default function HomePage() {
 
     // ======== MOBILE MENU ========
     function handleNavLinkClick() {
-      document.getElementById("navLinks")?.classList.remove("open");
+      setMenuOpen(false);
     }
     document.querySelectorAll(".nav-links a").forEach((link) => {
       link.addEventListener("click", handleNavLinkClick);
@@ -224,8 +224,9 @@ export default function HomePage() {
     };
   }, []);
 
+  const [menuOpen, setMenuOpen] = useState(false);
   function toggleMenu() {
-    document.getElementById("navLinks")?.classList.toggle("open");
+    setMenuOpen(!menuOpen);
   }
 
   return (
@@ -246,8 +247,16 @@ nav.scrolled{padding:.8rem 3rem;background:rgba(251,248,244,0.95);box-shadow:0 2
 .nav-cta{padding:.55rem 1.5rem!important;background:var(--charcoal)!important;color:#fff!important;border-radius:100px!important;font-size:.78rem!important;letter-spacing:.14em!important;transition:all .3s ease!important}
 .nav-cta:hover{background:var(--deep-plum)!important;transform:translateY(-1px);box-shadow:0 6px 20px rgba(44,38,54,0.15)}
 .nav-cta::after{display:none!important}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:101;background:none;border:none}
-.hamburger span{width:22px;height:1.5px;background:var(--charcoal);display:block}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor-pointer;z-index:101;background:none;border:none;padding:8px}
+.hamburger span{width:22px;height:1.5px;background:var(--charcoal);display:block;transition:all .3s ease}
+.mobile-menu{position:fixed;inset:0;z-index:200;background:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.8rem}
+.mobile-menu a{font-size:1.15rem;color:var(--text-secondary);text-decoration:none;letter-spacing:.2em;text-transform:uppercase;font-family:'Outfit',sans-serif;min-height:44px;display:flex;align-items:center;transition:color .3s}
+.mobile-menu a:hover{color:var(--charcoal)}
+.mobile-menu .nav-cta{margin-top:1rem;padding:.85rem 2rem;background:var(--charcoal);color:#fff!important;border-radius:100px;font-size:.82rem;letter-spacing:.14em}
+.mobile-close{position:absolute;top:1.2rem;right:1.2rem;background:none;border:none;cursor:pointer;padding:8px;z-index:201}
+.mobile-close span{display:block;width:22px;height:1.5px;background:var(--charcoal)}
+.mobile-close span:first-child{transform:rotate(45deg) translateY(1px)}
+.mobile-close span:last-child{transform:rotate(-45deg) translateY(-1px)}
 
 /* ==================== HERO ==================== */
 .hero{
@@ -552,8 +561,6 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
 @media(max-width:1024px){.services-grid,.testimonials-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:3rem}}
 @media(max-width:768px){
   nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;inset:0;background:rgba(251,248,244,0.97);backdrop-filter:blur(25px);justify-content:center;align-items:center;gap:2rem;z-index:100}
-  .nav-links.open a{font-size:1.1rem;color:var(--charcoal);min-height:44px;display:flex;align-items:center}
   .nav-brand-name{font-size:1.25rem}
   .nav-brand-sub{font-size:.58rem;letter-spacing:.22em}
   .hero{min-height:auto;padding-top:0}
@@ -651,9 +658,9 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
           <li><a href="/about">About</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/services/life-coaching">Coaching</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="/contact">Contact</a></li>
-          <li><a href="/booking" className="nav-cta">Begin Your Shift</a></li>
+          <li><a href="/booking" className="nav-cta">Book Now</a></li>
         </ul>
         <button className="hamburger" onClick={toggleMenu} aria-label="Menu">
           <span></span>
@@ -661,6 +668,22 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
           <span></span>
         </button>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      {menuOpen && (
+        <div className="mobile-menu">
+          <button className="mobile-close" onClick={() => setMenuOpen(false)} aria-label="Close menu">
+            <span></span>
+            <span></span>
+          </button>
+          <a href="/about" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="/services" onClick={() => setMenuOpen(false)}>Services</a>
+          <a href="/services/life-coaching" onClick={() => setMenuOpen(false)}>Coaching</a>
+          <a href="/blog" onClick={() => setMenuOpen(false)}>Blog</a>
+          <a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
+          <a href="/booking" className="nav-cta" onClick={() => setMenuOpen(false)}>Book Now</a>
+        </div>
+      )}
 
       {/* ============ HERO ============ */}
       <section className="hero">
