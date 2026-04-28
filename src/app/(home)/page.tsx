@@ -566,7 +566,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
   .hero{min-height:100vh;min-height:100svh;padding-top:0;display:flex;align-items:center;justify-content:center}
   .hero h1{font-size:2.8rem;line-height:1.12;margin-bottom:1.4rem}
   .hero-sub{max-width:100%;font-size:.95rem;line-height:1.75;margin-bottom:2.2rem}
-  .hero-content{padding:7rem 1.8rem 4rem;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .hero-content{padding:8.5rem 1.8rem 4rem;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}
   .hero-badge{font-size:.6rem;padding:.55rem 1.4rem;letter-spacing:.22em}
   #heroCanvas{opacity:.15}
   .zodiac-wheel,.inner-wheel,.sacred-core{opacity:.35}
