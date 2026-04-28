@@ -849,7 +849,7 @@ footer{position:relative;z-index:1;padding:3rem 2rem 2.5rem;border-top:1px solid
             <a href="/booking" className="btn-primary">
               Start Your Transformation <span>{"\u2192"}</span>
             </a>
-            <a href="/about" className="btn-secondary">
+            <a href="/services" className="btn-secondary">
               How It Works
             </a>
           </div>
